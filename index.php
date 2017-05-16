@@ -174,7 +174,8 @@
 	</div>
 </section>
 
-<section class="skill-holder"><!-- skills -->
+<!-- skills -->
+<!-- <section class="skill-holder">
 	<div class="container">
 		<div class="row">
 			<h2 class="subtitle">my skills</h2>
@@ -182,58 +183,136 @@
 
 				<?php
 
-				$my_skills = array(
-					array(
-						"skill_name" => "HTML / CSS",
-						"percentage" => "80%",
-					),
-					array(
-						"skill_name" => "PHOTOSHOP / ILLUSTRATOR",
-						"percentage" => "70%",
-					),
-					array(
-						"skill_name" => "BOOTSTRAP",
-						"percentage" => "85%",
-					),
-					array(
-						"skill_name" => "JAVASCRIPT",
-						"percentage" => "90%",
-					),
-					array(
-						"skill_name" => "PHP / MYSQL",
-						"percentage" => "55%",
-					),
-					array(
-						"skill_name" => "WORDPRESS",
-						"percentage" => "65%",
-					),
-				);
+				// $my_skills = array(
+				// 	array(
+				// 		"skill_name" => "HTML / CSS",
+				// 		"percentage" => "80%",
+				// 	),
+				// 	array(
+				// 		"skill_name" => "PHOTOSHOP / ILLUSTRATOR",
+				// 		"percentage" => "70%",
+				// 	),
+				// 	array(
+				// 		"skill_name" => "BOOTSTRAP",
+				// 		"percentage" => "85%",
+				// 	),
+				// 	array(
+				// 		"skill_name" => "JAVASCRIPT",
+				// 		"percentage" => "90%",
+				// 	),
+				// 	array(
+				// 		"skill_name" => "PHP / MYSQL",
+				// 		"percentage" => "55%",
+				// 	),
+				// 	array(
+				// 		"skill_name" => "WORDPRESS",
+				// 		"percentage" => "65%",
+				// 	),
+				// );
 
-				$index = 0;
-				echo '<div class="col-xs-12 col-md-6">';
-				foreach ($my_skills as $skill) { 
-					if( $index != 0 && $index % 3 == 0) {
-						echo '</div>';
-						echo '<div class="col-xs-12 col-md-6">';
-					}
-					?>
-					<div class="skill-in">
-						<h5><?php echo $skill['skill_name']; ?></h5>
+				// $index = 0;
+				// echo '<div class="col-xs-12 col-md-6">';
+				// foreach ($my_skills as $skill) { 
+				// 	if( $index != 0 && $index % 3 == 0) {
+				// 		echo '</div>';
+				// 		echo '<div class="col-xs-12 col-md-6">';
+				// 	}
+				// 	?>
+				// 	<div class="skill-in">
+				// 		<h5><?php echo $skill['skill_name']; ?></h5>
 
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-							aria-valuemax="100" style="width: <?php echo $skill['percentage']; ?>">
-							<?php echo $skill['percentage']; ?>
-							</div>
-						</div>
-					</div>
-					<?php 
-					$index++;
-				} 
-				echo '</div>';
+				// 		<div class="progress">
+				// 			<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+				// 			aria-valuemax="100" style="width: <?php echo $skill['percentage']; ?>">
+				// 			<?php echo $skill['percentage']; ?>
+				// 			</div>
+				// 		</div>
+				// 	</div>
+				// 	<?php 
+				// 	$index++;
+				// } 
+				// echo '</div>';
 				?>
 
 			<div class="col-xs-12 col-md-6">
+		</div>
+	</div>
+</section> -->
+<!-- end of skills -->
+
+
+<!-- start of skills -->
+<section class="portfolio-holder" id="portfolios_skills"><!-- portfolio -->
+	<div class="container">
+		<div class="row">
+			<h2 class="subtitle">skills</h2>
+
+			<div class="col-md-12">
+				<div class="filter-holder">
+					<ul id="filters" class="clearfix">
+						<li><span class="filter-skill active" data-filter=".font-end, .back-end, .server">All</span></li>
+						<li><span class="filter-skill" data-filter=".front-end">Front End</span></li>
+						<li><span class="filter-skill" data-filter=".back-end">Back End</span></li>
+						<li><span class="filter-skill" data-filter=".server">Server</span></li>
+					</ul>
+				</div>
+
+				<div id="portfolio_skill_list">
+
+				<?php
+
+				$list = array(
+					array(
+						"title" => "Scripting",
+						"data-category" => "back-end"
+					),	
+					array(
+						"title" => "Code Ignitor",
+						"data-category" => "back-end"
+					),
+					array(
+						"title" => "jQuery",
+						"data-category" => "front-end"
+					),	
+					array(
+						"title" => "AJAX Calls",
+						"data-category" => "front-end"
+					),
+					array(
+						"title" => "New Linux Server Setup",
+						"data-category" => "server"
+					),	
+					array(
+						"title" => "Crontab",
+						"data-category" => "server"
+					),
+				);
+				foreach ($list as $value) { 
+
+					?>
+
+					<div class="portfolio-skill <?php echo $value['data-category']; ?>" data-cat="<?php echo $value['data-category']; ?>">
+						<div class="portfolio-wrapper">
+							<!-- <div class="skills"><?php //echo $value['title']; ?> -->
+							<img src="http://placehold.it/400x300" alt=""/>
+
+							<div class="label">
+								<div class="label-text">
+									<h5 class="text-title"><?php echo $value['title']; ?></h5>
+									<span class="text-category"><?php echo $value['data-category']; ?></span>
+
+									<div class="porticon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+									</div>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
+					</div>
+				<?php } ?>
+
+				</div>
+				<!--end of portfolio list-->
+			</div>
 		</div>
 	</div>
 </section>
