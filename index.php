@@ -259,72 +259,64 @@
 
 				<div id="portfolio_skill_list">
 
+				<?php
 
+				$list = array(
+					array(
+						"title" => "Scripting",
+						"data-category" => "back-end"
+					),	
+					array(
+						"title" => "Code Ignitor",
+						"data-category" => "back-end"
+					),
+					array(
+						"title" => "jQuery",
+						"data-category" => "front-end"
+					),	
+					array(
+						"title" => "AJAX Calls",
+						"data-category" => "front-end"
+					),
+					array(
+						"title" => "New Linux Server Setup",
+						"data-category" => "server"
+					),	
+					array(
+						"title" => "Crontab",
+						"data-category" => "server"
+					),
+				);
+				foreach ($list as $value) { 
 
-					<?php
+					?>
 
-					$list = array(
-						array(
-							"title" => "Scripting",
-							"data-category" => "back-end"
-							),	
-						array(
-							"title" => "Code Ignitor",
-							"data-category" => "back-end"
-							),
-						array(
-							"title" => "jQuery",
-							"data-category" => "front-end"
-							),	
-						array(
-							"title" => "AJAX Calls",
-							"data-category" => "front-end"
-							),
-						array(
-							"title" => "New Linux Server Setup",
-							"data-category" => "server"
-							),	
-						array(
-							"title" => "Crontab",
-							"data-category" => "server"
-							),
-						);
+					<div class="portfolio-skill <?php echo $value['data-category']; ?>" data-cat="<?php echo $value['data-category']; ?>">
+						<div class="portfolio-wrapper">
+							<!-- <div class="skills"><?php //echo $value['title']; ?> -->
+							<img src="http://placehold.it/400x300" alt=""/>
 
-						?>
+							<div class="label">
+								<div class="label-text">
+									<h5 class="text-title"><?php echo $value['title']; ?></h5>
+									<span class="text-category"><?php echo $value['data-category']; ?></span>
 
-						<div class="controls">
-						<label>Filter:</label>
-
-						<button class="filter active" data-filter="all">All</button>
-						<button class="filter" data-filter=".back-end">Back End</button>
-						<button class="filter" data-filter=".front-end">Front End</button>
-						<button class="filter" data-filter=".server">Server</button>
-						<label>Change Layout:</label>
-						<button id="ChangeLayout">Grid</button>
+									<div class="porticon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+									</div>
+								</div>
+								<div class="label-bg"></div>
+							</div>
+						</div>
 					</div>
-					<div id="Container" class="container">
-
-						<?php foreach ($list as $key => $value) { ?>
-						<div class="mix <?php echo $value['data-category']; ?>" data-myorder="<?php echo $value['title']; ?>"></div>
-						<?php } ?>
-
-						<div class="gap"></div>
-						<div class="gap"></div>
-					</div>
-
+				<?php } ?>
 
 				</div>
 				<!--end of portfolio list-->
-
-
-
 			</div>
 		</div>
 	</div>
 </section>
 <!-- end of skills -->
-
-
 
 <section id="services" class="services"><!-- services -->
 	<div class="container">
