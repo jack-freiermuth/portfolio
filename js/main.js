@@ -112,13 +112,26 @@
                             filter: '.app'
                         }
                     });
+                },
 
+                init_two: function () {
+                    $('#portfolio_skill_list').mixItUp({
+                        selectors: {
+                            target: '.portfolio-skill',
+                            filter: '.filter-skill'
+                        },
+                        load: {
+                            filter: '.back-end'
+                        }
+                    });
                 }
+
 
             };
 
             // Run the show!
             filterList.init();
+            filterList.init_two();
 
 
         });
