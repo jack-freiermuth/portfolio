@@ -174,6 +174,9 @@
 	</div>
 </section>
 
+
+<section class="skill-holder"><!--home-->
+
 <?php
 $list = array(
 	'back-end' => array(
@@ -184,7 +187,7 @@ $list = array(
 		"PHP",
 		"WordPress",
 		"Google Analytics API",
-		),
+	),
 	'front-end' => array(
 		"jQuery",
 		"AJAX Calls",
@@ -192,21 +195,21 @@ $list = array(
 		'HTML5',
 		'CSS',
 		'Scalable Vector Graphics',
-		),
+	),
 	'server' => array(
 		"New Linux Server Setup",
 		"Crontab",
 		'Unix Shell',
 		'SVN',
 		'GitHub',
-		'Plesk CLI (Server Management)',
+		'Plesk CLI',
 		'Rackspace',
 		'Amazon EC2',
 		'Digital Ocean',
 		'FTP Setup',
 		'cPanel',
 		'SSL Certificates',
-		),
+	),
 	'misc' => array(
 		'WAMP',
 		'LAMP',
@@ -214,18 +217,17 @@ $list = array(
 		'Fogbugz Task Management',
 		'Basecamp Task Management',
 		'Sublime Text 3',
-		),
-	);
-	?>
+		'Adobe Photoshop',
+		'Adobe Illustrator',
+	),
+);
 
-	<div class="wrap">
+foreach ($list as $key => $value) {
+	sort($value);
+}
+?>
+
 		<div class="container">
-			<div class="row">
-				<div class="twelve columns">
-					<h4>Filter Programmes</h4>
-				</div>
-			</div><!-- end of row -->
-
 			<div class="row">
 				<div class="twelve columns">
 					<div class="programs">
@@ -244,7 +246,7 @@ $list = array(
 					<?php 
 					foreach ($list as $category => $category_array) {
 						foreach ($category_array as $skill) {
-							echo '<li class="mix-target '.$category.'"><a href="#">'.$skill.'<span>(U)</span></a></li>';
+							echo '<li class="mix-target '.$category.'"><a href="#">'.$skill.'</a></li>';
 						
 						}
 					} ?>
@@ -252,11 +254,11 @@ $list = array(
 				</div>
 			</div><!-- end of row -->   
 		</div><!-- end of container -->
-	</div><!-- end of wrap -->
 
 
 
 
+</section>
 
 
 

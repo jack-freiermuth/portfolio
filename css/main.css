@@ -907,7 +907,8 @@ h4 {
     border-radius: 5px;
     margin: 0 auto;
     text-align: center;
-    background: #d2d2d2;
+    /*background: #d2d2d2;*/
+    background: white;
     color: white;
     font-weight: 700;
     padding: 3px 0;
@@ -953,7 +954,7 @@ img {
 .programs button {
     outline: none;
     margin-bottom: 0;
-    background: whitesmoke;
+    background: #EFEFF3;
     width: 50%;
     height: auto;
     font-weight: normal;
@@ -966,12 +967,17 @@ img {
 
 .programs button:hover {
     background: #99cfe0;
+    border-radius: 100px;
+
 }
 
 .programs button.active {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5) inset, 0px 0px 1px transparent;
     background: #3a9fbf;
     color: white;
+
+    background: #2A69B0;
+    border-radius: 100px;
 }
 
 .courses {
@@ -984,24 +990,29 @@ img {
     text-align: center;
     font-size: 14px;
     display: inline-block;
-    width: 46%;
+    width: 12%;
     margin: 0 2%;
 }
 
 .courses a {
+    background: #757575;
+    color: white;
     display: block;
-    height: 60px;
-    margin: 15px 0;
-    padding-top: 12.5px;
-    background: whitesmoke;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    vertical-align: middle;
+    margin: 4px 0;
     color: black;
     border: 1px solid white;
     -webkit-transition: all .4s ease;
             transition: all .4s ease;
+    /*padding-top: 12.5px;*/
+    /*background: whitesmoke;*/
 }
 
 .courses a:hover {
-    background: #99cfe0;
+    /*background: #99cfe0;*/
 }
 
 .courses .mix-target {
@@ -1025,12 +1036,14 @@ img {
     }
 
     .courses a {
-        background: #EBEBEB;
+        background: #757575;
+    color: white;
+        /*background: #EBEBEB;*/
         border: none;
     }
 
     .courses a:hover {
-        background: #EBEBEB;
+        /*background: #EBEBEB;*/
         -webkit-transform: scale(1.15);
             -ms-transform: scale(1.15);
                 transform: scale(1.15);
@@ -1050,7 +1063,7 @@ img {
     }
 
     .programs button {
-        width: 25%;
+        width: 20%;
         margin-bottom: 15px;
     }
 
