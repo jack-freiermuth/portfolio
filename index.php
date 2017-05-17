@@ -174,149 +174,114 @@
 	</div>
 </section>
 
-<!-- skills -->
-<!-- <section class="skill-holder">
-	<div class="container">
-		<div class="row">
-			<h2 class="subtitle">my skills</h2>
+<?php
+$list = array(
+	'back-end' => array(
+		"Scripting",
+		"Code Ignitor Framework",
+		"MySQL",
+		"phpMyAdmin",
+		"PHP",
+		"WordPress",
+		"Google Analytics API",
+		),
+	'front-end' => array(
+		"jQuery",
+		"AJAX Calls",
+		'JSON',
+		'HTML5',
+		'CSS',
+		'Scalable Vector Graphics',
+		),
+	'server' => array(
+		"New Linux Server Setup",
+		"Crontab",
+		'Unix Shell',
+		'SVN',
+		'GitHub',
+		'Plesk CLI (Server Management)',
+		'Rackspace',
+		'Amazon EC2',
+		'Digital Ocean',
+		'FTP Setup',
+		'cPanel',
+		'SSL Certificates',
+		),
+	'misc' => array(
+		'WAMP',
+		'LAMP',
+		'Jira Task Management',
+		'Fogbugz Task Management',
+		'Basecamp Task Management',
+		'Sublime Text 3',
+		),
+	);
+	?>
 
+	<div class="wrap">
+		<div class="container">
+			<div class="row">
+				<div class="twelve columns">
+					<h4>Filter Programmes</h4>
+				</div>
+			</div><!-- end of row -->
 
-				<?php
+			<div class="row">
+				<div class="twelve columns">
+					<div class="programs">
+						<button class="filter-btn" data-filter="all">All</button>
+						<button class="filter-btn" data-filter=".server">Server</button>
+						<button class="filter-btn" data-filter=".back-end">Back-end Development</button>
+						<button class="filter-btn" data-filter=".front-end">Front-end Development</button>
+						<button class="filter-btn" data-filter=".misc">Misc</button>
+					</div>
+				</div>
+			</div><!-- end of row -->
 
-				// $my_skills = array(
-				// 	array(
-				// 		"skill_name" => "HTML / CSS",
-				// 		"percentage" => "80%",
-				// 	),
-				// 	array(
-				// 		"skill_name" => "PHOTOSHOP / ILLUSTRATOR",
-				// 		"percentage" => "70%",
-				// 	),
-				// 	array(
-				// 		"skill_name" => "BOOTSTRAP",
-				// 		"percentage" => "85%",
-				// 	),
-				// 	array(
-				// 		"skill_name" => "JAVASCRIPT",
-				// 		"percentage" => "90%",
-				// 	),
-				// 	array(
-				// 		"skill_name" => "PHP / MYSQL",
-				// 		"percentage" => "55%",
-				// 	),
-				// 	array(
-				// 		"skill_name" => "WORDPRESS",
-				// 		"percentage" => "65%",
-				// 	),
-				// );
-
-				// $index = 0;
-				// echo '<div class="col-xs-12 col-md-6">';
-				// foreach ($my_skills as $skill) { 
-				// 	if( $index != 0 && $index % 3 == 0) {
-				// 		echo '</div>';
-				// 		echo '<div class="col-xs-12 col-md-6">';
-				// 	}
-				// 	?>
-				// 	<div class="skill-in">
-				// 		<h5><?php echo $skill['skill_name']; ?></h5>
-
-				// 		<div class="progress">
-				// 			<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-				// 			aria-valuemax="100" style="width: <?php echo $skill['percentage']; ?>">
-				// 			<?php echo $skill['percentage']; ?>
-				// 			</div>
-				// 		</div>
-				// 	</div>
-				// 	<?php 
-				// 	$index++;
-				// } 
-				// echo '</div>';
-				?>
-
-			<div class="col-xs-12 col-md-6">
-		</div>
-	</div>
-</section> -->
-<!-- end of skills -->
-
-
-<!-- start of skills -->
-<section class="portfolio-holder" id="portfolios_skills"><!-- portfolio -->
-	<div class="container">
-		<div class="row">
-			<h2 class="subtitle">skills</h2>
-
-			<div class="col-md-12">
-				<div class="filter-holder">
-					<ul id="filters" class="clearfix">
-						<li><span class="filter-skill active" data-filter=".font-end, .back-end, .server">All</span></li>
-						<li><span class="filter-skill" data-filter=".front-end">Front End</span></li>
-						<li><span class="filter-skill" data-filter=".back-end">Back End</span></li>
-						<li><span class="filter-skill" data-filter=".server">Server</span></li>
+			<div class="row">
+				<div class="twelve columns">
+					<ul class="courses" id="mix-wrapper">
+					<?php 
+					foreach ($list as $category => $category_array) {
+						foreach ($category_array as $skill) {
+							echo '<li class="mix-target '.$category.'"><a href="#">'.$skill.'<span>(U)</span></a></li>';
+						
+						}
+					} ?>
 					</ul>
 				</div>
+			</div><!-- end of row -->   
+		</div><!-- end of container -->
+	</div><!-- end of wrap -->
 
-				<div id="portfolio_skill_list">
 
-				<?php
 
-				$list = array(
-					array(
-						"title" => "Scripting",
-						"data-category" => "back-end"
-					),	
-					array(
-						"title" => "Code Ignitor",
-						"data-category" => "back-end"
-					),
-					array(
-						"title" => "jQuery",
-						"data-category" => "front-end"
-					),	
-					array(
-						"title" => "AJAX Calls",
-						"data-category" => "front-end"
-					),
-					array(
-						"title" => "New Linux Server Setup",
-						"data-category" => "server"
-					),	
-					array(
-						"title" => "Crontab",
-						"data-category" => "server"
-					),
-				);
-				foreach ($list as $value) { 
 
-					?>
 
-					<div class="portfolio-skill <?php echo $value['data-category']; ?>" data-cat="<?php echo $value['data-category']; ?>">
-						<div class="portfolio-wrapper">
-							<!-- <div class="skills"><?php //echo $value['title']; ?> -->
-							<img src="http://placehold.it/400x300" alt=""/>
 
-							<div class="label">
-								<div class="label-text">
-									<h5 class="text-title"><?php echo $value['title']; ?></h5>
-									<span class="text-category"><?php echo $value['data-category']; ?></span>
 
-									<div class="porticon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
-									</div>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>
-				<?php } ?>
 
-				</div>
-				<!--end of portfolio list-->
-			</div>
-		</div>
-	</div>
-</section>
-<!-- end of skills -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <section id="services" class="services"><!-- services -->
 	<div class="container">
@@ -674,7 +639,7 @@
 						<div class="ft-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
 					</div>
 					<div class="col-xs-8 col-md-10">
-						<p>Your Location name <br> 70z, street name, Toledo - 12</p>
+						<p>Minneapolis <br> 3036 West Lake Street</p>
 					</div>
 				</div>
 				<div class="foot-line"></div>
@@ -683,7 +648,7 @@
 						<div class="ft-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
 					</div>
 					<div class="col-xs-8 col-md-10">
-						<p>(000) 000-0000<br>(000) 000-0000</p>
+						<p>(715) 441-3948</p>
 					</div>
 				</div>
 				<div class="foot-line"></div>
@@ -692,7 +657,7 @@
 						<div class="ft-icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
 					</div>
 					<div class="col-xs-8 col-md-10">
-						<p>yourmail@mail.com <br> www.example.com</p>
+						<p>jack.freiermuth@gmail.com <br> www.jackfry.net</p>
 					</div>
 				</div>
 			</div>
@@ -755,9 +720,9 @@
 						</a>
 					</li>
 				</ul>
-				<div class="foot-line"></div>
-				<p class="footer-text">Copyright &copy; 2017 IZSU | All Rights Reserved. Designed by <a
-						href="http://www.webthil.com">Webthil</a></p>
+				<!-- <div class="foot-line"></div> -->
+				<!-- <p class="footer-text">Copyright &copy; 2017 IZSU | All Rights Reserved. Designed by <a -->
+						<!-- href="http://www.webthil.com">Webthil</a></p> -->
 			</div>
 		</div>
 		<!--end of footer-social-icon-->
