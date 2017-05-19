@@ -229,9 +229,12 @@ foreach ($list as $key => $value) {
 
 		<div class="container">
 			<div class="row">
+			<h2 class="subtitle">Skills</h2>
+
 				<div class="twelve columns">
 					<div class="programs">
-						<button class="filter-btn" data-filter="all">All</button>
+						<button class="filter-btn" data-filter="all"><b>All</b></button>
+						<div style="clear: both;"></div>
 						<button class="filter-btn" data-filter=".server">Server</button>
 						<button class="filter-btn" data-filter=".back-end">Back-end Development</button>
 						<button class="filter-btn" data-filter=".front-end">Front-end Development</button>
