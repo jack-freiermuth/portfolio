@@ -101,26 +101,26 @@
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-						data-target="#mobile-collapse" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img src="http://placehold.it/180x60" alt="izsu-logo"></a>
-			</div>
-			<div class="collapse navbar-collapse" id="mobile-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#home">home</a></li>
-					<li><a href="#about">about me</a></li>
-					<li><a href="#services">services</a></li>
-					<li><a href="#portfolios">portfolio</a></li>
-					<li><a href="#testimonial">testimonial</a></li>
-					<li><a href="#contact">contact</a></li>
-				</ul>
-			</div>
+				data-target="#mobile-collapse" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><img src="http://placehold.it/180x60" alt="izsu-logo"></a>
 		</div>
-	</nav>
+		<div class="collapse navbar-collapse" id="mobile-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#home">home</a></li>
+				<li><a href="#about">about me</a></li>
+				<li><a href="#services">services</a></li>
+				<li><a href="#portfolios">portfolio</a></li>
+				<li><a href="#testimonial">testimonial</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
 </header>
 <!--end of Header-->
 
@@ -187,7 +187,7 @@ $list = array(
 		"PHP",
 		"WordPress",
 		"Google Analytics API",
-	),
+		),
 	'front-end' => array(
 		"jQuery",
 		"AJAX Calls",
@@ -195,9 +195,9 @@ $list = array(
 		'HTML5',
 		'CSS',
 		'Scalable Vector Graphics',
-	),
+		),
 	'server' => array(
-		"New Linux Server Setup",
+		"Linux Server Setup",
 		"Crontab",
 		'Unix Shell',
 		'SVN',
@@ -209,7 +209,7 @@ $list = array(
 		'FTP Setup',
 		'cPanel',
 		'SSL Certificates',
-	),
+		),
 	'misc' => array(
 		'WAMP',
 		'LAMP',
@@ -217,46 +217,43 @@ $list = array(
 		'Fogbugz Task Management',
 		'Basecamp Task Management',
 		'Sublime Text 3',
-		'Adobe Photoshop',
-		'Adobe Illustrator',
-	),
-);
+		'Photoshop',
+		'Illustrator',
+		),
+	);
 
-foreach ($list as $key => $value) {
-	sort($value);
-}
 ?>
 
-		<div class="container">
-			<div class="row">
-			<h2 class="subtitle">Skills</h2>
+<div class="container">
+	<div class="row">
+		<h2 class="subtitle">Skills</h2>
 
-				<div class="twelve columns">
-					<div class="programs">
-						<button class="filter-btn" data-filter="all"><b>All</b></button>
-						<div style="clear: both;"></div>
-						<button class="filter-btn" data-filter=".server">Server</button>
-						<button class="filter-btn" data-filter=".back-end">Back-end Development</button>
-						<button class="filter-btn" data-filter=".front-end">Front-end Development</button>
-						<button class="filter-btn" data-filter=".misc">Misc</button>
-					</div>
-				</div>
-			</div><!-- end of row -->
+		<div class="twelve columns">
+			<div class="programs">
+				<button class="filter-btn" data-filter="all"><b>All</b></button>
+				<div style="clear: both;"></div>
+				<button class="new-class filter-btn" data-filter=".server">Server</button>
+				<button class="new-class filter-btn" data-filter=".back-end">Back-end</button>
+				<button class="new-class filter-btn" data-filter=".front-end">Front-end</button>
+				<button class="new-class filter-btn" data-filter=".misc">Misc</button>
+			</div>
+		</div>
+	</div><!-- end of row -->
 
-			<div class="row">
-				<div class="twelve columns">
-					<ul class="courses" id="mix-wrapper">
-					<?php 
-					foreach ($list as $category => $category_array) {
-						foreach ($category_array as $skill) {
-							echo '<li class="mix-target '.$category.'"><a href="#">'.$skill.'</a></li>';
-						
-						}
-					} ?>
-					</ul>
-				</div>
-			</div><!-- end of row -->   
-		</div><!-- end of container -->
+	<div class="row">
+		<div class="twelve columns">
+			<ul class="courses" id="mix-wrapper">
+				<?php 
+				foreach ($list as $category => $category_array) {
+					foreach ($category_array as $skill) {
+						echo '<li class="mix-target '.$category.'"><a href="#"><p class="vertical-center">'.$skill.'</p></a></li>';
+
+					}
+				} ?>
+			</ul>
+		</div>
+	</div><!-- end of row -->   
+</div><!-- end of container -->
 
 
 
