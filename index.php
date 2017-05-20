@@ -107,15 +107,15 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"><img src="http://placehold.it/180x60" alt="izsu-logo"></a>
+			<!-- <a class="navbar-brand" href="#"><img src="http://placehold.it/180x60" alt="izsu-logo"></a> -->
 		</div>
 		<div class="collapse navbar-collapse" id="mobile-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#home">home</a></li>
 				<li><a href="#about">about me</a></li>
 				<li><a href="#services">services</a></li>
-				<li><a href="#portfolios">portfolio</a></li>
-				<li><a href="#testimonial">testimonial</a></li>
+				<!-- <li><a href="#portfolios">portfolio</a></li> -->
+				<!-- <li><a href="#testimonial">testimonial</a></li> -->
 				<li><a href="#contact">contact</a></li>
 			</ul>
 		</div>
@@ -165,9 +165,9 @@
 				<img src="images/snow_monkey.jpg" alt="">
 			</div>
 			<div class="col-xs-12 col-md-8">
-				<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer.</p>
+				<p>Hello! My name is Jack Freiermuth, and I like to travel, snowboard, play video games, and of course, do web development!</p>
 
-				<p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+				<p>I have a B.S. in Computer Science and another B.S. in Mathematics. Programming really is a passion of mine, and I am constantly looking to learn new programming techniques and try new things.</p>
 				<button type="button" class="btn btn-default btn-lg">DOWNLOAD MY RESUME</button>
 			</div>
 		</div>
@@ -178,6 +178,26 @@
 <section class="skill-holder"><!--home-->
 
 <?php
+// $list = array(
+// 	'back-end' => array(
+// 		"Code Ignitor Framework",
+// 		"Google Analytics API",
+// 		),
+// 	'front-end' => array(
+// 		'Scalable Vector Graphics',
+// 		'Another Very Very Very Long Text',
+// 		),
+// 	'server' => array(
+// 		"New Linux Server Setup",
+// 		'SSL Certificate Renewal',
+// 		'Another Really Really Really Long Text',
+// 		),
+// 	'misc' => array(
+// 		'Jira Task Management',
+// 		'Fogbugz Task Management',
+// 		'Basecamp Task Management',
+// 		),
+// 	);
 $list = array(
 	'back-end' => array(
 		"Scripting",
@@ -246,7 +266,7 @@ $list = array(
 				<?php 
 				foreach ($list as $category => $category_array) {
 					foreach ($category_array as $skill) {
-						echo '<li class="mix-target '.$category.'"><a href="#"><p class="vertical-center">'.$skill.'</p></a></li>';
+						echo '<li class="mix-target '.$category.'"><span class="vertical-center">'.$skill.'</span></li>';
 
 					}
 				} ?>
@@ -294,11 +314,11 @@ $list = array(
 				<div class="service-in">
 					<section>
 						<div class="sericon-holder">
-							<i class="fa fa-paint-brush" aria-hidden="true"></i>
+							<i class="fa fa-linux" aria-hidden="true"></i>
 						</div>
-						<h4>graphic design</h4>
+						<h4>linux server admin</h4>
 
-						<p>we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
+						<p>I spin up a new server from fresh and get it ready for your website. I'll install all of the necessary applications needed to get everything working, create an FTP user for you, and more upon request.</p>
 					</section>
 					<section>
 						<div class="sericon-holder">
@@ -306,7 +326,7 @@ $list = array(
 						</div>
 						<h4>front end development</h4>
 
-						<p>we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
+						<p>I can help make your website look up to date with current design and development practices. Responsive design will make it work for all sizes of screen!</p>
 					</section>
 					<section>
 						<div class="sericon-holder">
@@ -314,7 +334,7 @@ $list = array(
 						</div>
 						<h4>backend development</h4>
 
-						<p>we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
+						<p>Back end web development is my specialty! I can create databases to connect to, call from external API's, or even make web tools that do stuff for you.</p>
 					</section>
 					<section>
 						<div class="sericon-holder">
@@ -322,7 +342,7 @@ $list = array(
 						</div>
 						<h4>wordpress development</h4>
 
-						<p>we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
+						<p>If you want a Wordpress site, I can set it up for you the proper way, with child themes, so that you won't accidently delete your website when you update. My role at a previous web hosting job was Wordpress Maintenance.</p>
 					</section>
 				</div>
 			</div>
@@ -331,7 +351,7 @@ $list = array(
 </section>
 <!-- end of services -->
 
-<section class="portfolio-holder" id="portfolios"><!-- portfolio -->
+<!-- <section class="portfolio-holder" id="portfolios">
 	<div class="container">
 		<div class="row">
 			<h2 class="subtitle">my portfolio</h2>
@@ -352,164 +372,164 @@ $list = array(
 
 				<?php
 
-				$list = array(
-					array(
-						"title" => "Bird Document",
-						"text-category" => "Logo",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "logo"
-					),
-					array(
-						"title" => "Visual Infography",
-						"text-category" => "APP",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "app"
-					),
-					array(
-						"title" => "Sonor's",
-						"text-category" => "Web design",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "web"
-					),
-					array(
-						"title" => "Typography Company",
-						"text-category" => "Business card",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "card"
-					),
-					array(
-						"title" => "Weatherette",
-						"text-category" => "APP",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "app"
-					),
-					array(
-						"title" => "BMF",
-						"text-category" => "Business card",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "card"
-					),
-					array(
-						"title" => "Techlion",
-						"text-category" => "Business card",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "card"
-					),
-					array(
-						"title" => "KittyPic",
-						"text-category" => "Logo",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "logo"
-					),
-					array(
-						"title" => "Graph Plotting",
-						"text-category" => "APP",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "app"
-					),
-					array(
-						"title" => "QR Quick",
-						"text-category" => "Business card",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "card"
-					),
-					array(
-						"title" => "Mobi Sock",
-						"text-category" => "Logo",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "logo"
-					),
-					array(
-						"title" => "Village Community",
-						"text-category" => "Logo",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "logo"
-					),
-					array(
-						"title" => "Domino's",
-						"text-category" => "Icon",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "icon"
-					),
-					array(
-						"title" => "Backend Admin",
-						"text-category" => "Web design",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "web"
-					),
-					array(
-						"title" => "Instagram",
-						"text-category" => "Icon",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "icon"
-					),
-					array(
-						"title" => "Student Guide",
-						"text-category" => "Web design",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "web"
-					),
-					array(
-						"title" => "Scoccer",
-						"text-category" => "Icon",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "icon"
-					),
-					array(
-						"title" => "3D Map",
-						"text-category" => "Icon",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "icon"
-					),
-					array(
-						"title" => "Note",
-						"text-category" => "Web design",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "web"
-					),
-					array(
-						"title" => "Native Designers",
-						"text-category" => "Logo",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "logo"
-					),
-					array(
-						"title" => "Bookworm",
-						"text-category" => "Logo",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "logo"
-					),
-					array(
-						"title" => "Sandwich",
-						"text-category" => "Icon",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "icon"
-					),
-					array(
-						"title" => "Reality",
-						"text-category" => "Business card",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "card"
-					),
-					array(
-						"title" => "Speciallisterne",
-						"text-category" => "Logo",
-						"image" => "http://placehold.it/400x300",
-						"data-category" => "logo"
-					),
-				);
-				foreach ($list as $value) { 
+				// $list = array(
+				// 	array(
+				// 		"title" => "Bird Document",
+				// 		"text-category" => "Logo",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "logo"
+				// 	),
+				// 	array(
+				// 		"title" => "Visual Infography",
+				// 		"text-category" => "APP",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "app"
+				// 	),
+				// 	array(
+				// 		"title" => "Sonor's",
+				// 		"text-category" => "Web design",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "web"
+				// 	),
+				// 	array(
+				// 		"title" => "Typography Company",
+				// 		"text-category" => "Business card",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "card"
+				// 	),
+				// 	array(
+				// 		"title" => "Weatherette",
+				// 		"text-category" => "APP",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "app"
+				// 	),
+				// 	array(
+				// 		"title" => "BMF",
+				// 		"text-category" => "Business card",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "card"
+				// 	),
+				// 	array(
+				// 		"title" => "Techlion",
+				// 		"text-category" => "Business card",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "card"
+				// 	),
+				// 	array(
+				// 		"title" => "KittyPic",
+				// 		"text-category" => "Logo",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "logo"
+				// 	),
+				// 	array(
+				// 		"title" => "Graph Plotting",
+				// 		"text-category" => "APP",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "app"
+				// 	),
+				// 	array(
+				// 		"title" => "QR Quick",
+				// 		"text-category" => "Business card",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "card"
+				// 	),
+				// 	array(
+				// 		"title" => "Mobi Sock",
+				// 		"text-category" => "Logo",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "logo"
+				// 	),
+				// 	array(
+				// 		"title" => "Village Community",
+				// 		"text-category" => "Logo",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "logo"
+				// 	),
+				// 	array(
+				// 		"title" => "Domino's",
+				// 		"text-category" => "Icon",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "icon"
+				// 	),
+				// 	array(
+				// 		"title" => "Backend Admin",
+				// 		"text-category" => "Web design",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "web"
+				// 	),
+				// 	array(
+				// 		"title" => "Instagram",
+				// 		"text-category" => "Icon",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "icon"
+				// 	),
+				// 	array(
+				// 		"title" => "Student Guide",
+				// 		"text-category" => "Web design",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "web"
+				// 	),
+				// 	array(
+				// 		"title" => "Scoccer",
+				// 		"text-category" => "Icon",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "icon"
+				// 	),
+				// 	array(
+				// 		"title" => "3D Map",
+				// 		"text-category" => "Icon",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "icon"
+				// 	),
+				// 	array(
+				// 		"title" => "Note",
+				// 		"text-category" => "Web design",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "web"
+				// 	),
+				// 	array(
+				// 		"title" => "Native Designers",
+				// 		"text-category" => "Logo",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "logo"
+				// 	),
+				// 	array(
+				// 		"title" => "Bookworm",
+				// 		"text-category" => "Logo",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "logo"
+				// 	),
+				// 	array(
+				// 		"title" => "Sandwich",
+				// 		"text-category" => "Icon",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "icon"
+				// 	),
+				// 	array(
+				// 		"title" => "Reality",
+				// 		"text-category" => "Business card",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "card"
+				// 	),
+				// 	array(
+				// 		"title" => "Speciallisterne",
+				// 		"text-category" => "Logo",
+				// 		"image" => "http://placehold.it/400x300",
+				// 		"data-category" => "logo"
+				// 	),
+				// );
+				// foreach ($list as $value) { 
 
 					?>
 
-					<div class="portfolio <?php echo $value['data-category']; ?>" data-cat="<?php echo $value['data-category']; ?>">
+					<div class="portfolio <?php //echo $value['data-category']; ?>" data-cat="<?php //echo $value['data-category']; ?>">
 						<div class="portfolio-wrapper">
-							<img src="<?php echo $value['image']; ?>" alt=""/>
+							<img src="<?php //echo $value['image']; ?>" alt=""/>
 
 							<div class="label">
 								<div class="label-text">
-									<h5 class="text-title"><?php echo $value['title']; ?></h5>
-									<span class="text-category"><?php echo $value['text-category']; ?></span>
+									<h5 class="text-title"><?php //echo $value['title']; ?></h5>
+									<span class="text-category"><?php //echo $value['text-category']; ?></span>
 
 									<div class="porticon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
 									</div>
@@ -518,21 +538,20 @@ $list = array(
 							</div>
 						</div>
 					</div>
-				<?php } ?>
+				<?php //} ?>
 
 				</div>
-				<!--end of portfolio list-->
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <!--end of portfolio-->
 
-<section class="call-to-action"><!--available for work-->
+<!-- <section class="call-to-action">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-8">
-				<h2>Do you love my work & want to work with me?</h2>
+				<h2>Do you want a personal website done?</h2>
 			</div>
 			<div class="col-xs-12 col-md-4">
 				<div class="call-to-btn">
@@ -542,9 +561,8 @@ $list = array(
 		</div>
 	</div>
 </section>
-<!--end of available for work-->
 
-<section class="testimonial" id="testimonial"><!--Testimonial-->
+<section class="testimonial" id="testimonial">
 	<div class="container">
 		<div class="row">
 			<h2 class="subtitle">testimonial</h2>
@@ -627,7 +645,7 @@ $list = array(
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <!--end of Testimonial-->
 
 <footer id="contact"><!-- footer -->
@@ -691,34 +709,9 @@ $list = array(
 		<div class="row"><!--footer-social-icon-->
 			<div class="col-xs-12 col-md-12">
 				<ul class="foot-social">
-					<li class="ft-fb">
-						<a href="#">
-							<i class="fa fa-facebook" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li class="ft-tw">
-						<a href="#">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li class="ft-gp">
-						<a href="#">
-							<i class="fa fa-google-plus" aria-hidden="true"></i>
-						</a>
-					</li>
 					<li class="ft-in">
-						<a href="#">
+						<a href="#https://www.linkedin.com/in/jackgustaf/">
 							<i class="fa fa-linkedin" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li class="ft-bh">
-						<a href="#">
-							<i class="fa fa-behance" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li class="ft-db">
-						<a href="#">
-							<i class="fa fa-dribbble" aria-hidden="true"></i>
 						</a>
 					</li>
 				</ul>

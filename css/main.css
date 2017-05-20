@@ -993,29 +993,28 @@ img {
 .courses li {
     text-align: center;
     font-size: 14px;
-    display: inline-block;
     width: 12%;
     margin: 0 0.5%;
 }
 
-.courses a {
-    background: #757575;
-    /*background: rgba(42, 105, 176, 0.13);*/
+.courses span {
     border: 1px solid white;
     color: black;
-    color: white;
     display: grid;
     font-size: 11px;
     height: 45px;
-    line-height: 45px;
-    vertical-align: center;
+    /*overflow: hidden;*/
+    background: #ffffff;
+    border: 2px solid #505050;
+    /*line-height: 45px;*/
+    /*vertical-align: middle;*/
     margin: 4px 0;
-    vertical-align: middle;
     -webkit-transition: all .4s ease;
             transition: all .4s ease;
+
 }
 
-.courses a:hover {
+.courses span:hover {
     /*background: #99cfe0;*/
 }
 
@@ -1029,11 +1028,9 @@ img {
   text-align: center;
 }
 
-/*.vertical-center {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}*/
+.vertical-center {
+	/*line-height: 45px;*/
+}
 
 /* MEDIA QUERIES STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1044,15 +1041,12 @@ img {
         width: 95%;
     }
 
-    .courses a {
-    	background: #ffffff;
-    	color: black;
-    	border: 1px solid #505050;
+    .courses span {
         font-size: 14px;
         text-align: center;
     }
 
- /*   .courses a:hover {
+ /*   .courses span:hover {
         -webkit-transform: scale(1.15);
             -ms-transform: scale(1.15);
                 transform: scale(1.15);
