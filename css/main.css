@@ -211,7 +211,7 @@ a:focus, a:hover {
 	background-image: url("../images/bg.jpg");
 	background-position: right top;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 	position: relative;
 	display: flex;
 	align-items: center;
