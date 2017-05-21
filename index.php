@@ -142,12 +142,12 @@
 						<span id="typed" style="white-space:pre;"></span>
 					</div>
 					<div class="brk"></div>
-					<h1>Web Designer and Developer</h1>
+					<h1>Web Developer</h1>
 
 					<div class="brk"></div>
 					<p>
 						<a href="#portfolios" class="btn btn-default btn-lg scrollto">SEE MY WORKS</a>&nbsp;&nbsp;
-						<a href="#contact" class="btn btn-default btn-lg btn-nobg scrollto">HIRE ME</a>
+						<a href="#contact" class="btn btn-default btn-lg btn-nobg scrollto">CONTACT ME</a>
 					</p>
 				</div>
 			</div>
@@ -168,7 +168,7 @@
 				<p>Hello! My name is Jack Freiermuth, and I like to travel, snowboard, play video games, and of course, do web development!</p>
 
 				<p>I have a B.S. in Computer Science and another B.S. in Mathematics. Programming really is a passion of mine, and I am constantly looking to learn new programming techniques and try new things.</p>
-				<button type="button" class="btn btn-default btn-lg">DOWNLOAD MY RESUME</button>
+				<a href="files/Jack-Freiermuth-Resume.pdf" download="Jack-Freiermuth-Resume.pdf" type="button" class="btn btn-default btn-lg">DOWNLOAD MY RESUME</a>
 			</div>
 		</div>
 	</div>
@@ -266,7 +266,7 @@ $list = array(
 				<?php 
 				foreach ($list as $category => $category_array) {
 					foreach ($category_array as $skill) {
-						echo '<li class="mix-target '.$category.'"><span class="vertical-center">'.$skill.'</span></li>';
+						echo '<li class="mix-target '.$category.'"><span>'.$skill.'</span></li>';
 
 					}
 				} ?>
@@ -682,20 +682,20 @@ $list = array(
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-6">
-				<form class="form-horizontal">
+				<form class="form-horizontal" form method="post" action="contact_email.php">
 					<div class="form-group">
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="name" placeholder="Your Name...">
+							<input name="name" type="text" class="form-control" id="name" placeholder="Your Name...">
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="col-sm-10">
-							<input type="email" id="email" class="form-control" placeholder="Your Email Address...">
+							<input name="email" type="email" id="email" class="form-control" placeholder="Your Email Address...">
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="col-sm-10">
-							<textarea class="form-control" rows="3" placeholder="Your Message..."></textarea>
+							<textarea  name="message" class="form-control" rows="3" placeholder="Your Message..."></textarea>
 						</div>
 					</div>
 					<div class="form-group">
