@@ -55,45 +55,21 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-6">
 					<ul class="top-contact-detail">
-						<li><i class="fa fa-paper-plane" aria-hidden="true"></i> jack.freiermuth@gmail.com</li>
+						<li><!-- <i class="fa fa-paper-plane" aria-hidden="true"></i>  -->jack.freiermuth@gmail.com</li>
 						<li><i class="fa fa-phone" aria-hidden="true"></i> (715) 441-3948</li>
 						<!-- <li><i class="fa fa-skype" aria-hidden="true"></i> myskypeid</li> -->
 					</ul>
 				</div>
-				<!-- <div class="col-xs-12 col-md-6">
+				<div class="col-xs-12 col-md-6">
 					<ul class="top-social-detail">
 						<li>
 							<div class="top-social-in">
-								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							</div>
-						</li>
-						<li>
-							<div class="top-social-in">
-								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							</div>
-						</li>
-						<li>
-							<div class="top-social-in">
-								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-							</div>
-						</li>
-						<li>
-							<div class="top-social-in">
-								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-							</div>
-						</li>
-						<li>
-							<div class="top-social-in">
-								<a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
-							</div>
-						</li>
-						<li>
-							<div class="top-social-in">
-								<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+								<a target="_blank" href="https://www.linkedin.com/in/jackgustaf/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
 							</div>
 						</li>
 					</ul>
-				</div> -->
+				</div>
 			</div>
 		</div>
 	</div>
@@ -460,7 +436,7 @@
 			<div class="col-xs-12 col-md-12">
 				<ul class="foot-social">
 					<li class="ft-in">
-						<a href="#https://www.linkedin.com/in/jackgustaf/">
+						<a target="_blank" href="https://www.linkedin.com/in/jackgustaf/">
 							<i class="fa fa-linkedin" aria-hidden="true"></i>
 						</a>
 					</li>
