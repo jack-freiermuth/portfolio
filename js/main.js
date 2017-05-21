@@ -96,36 +96,8 @@
             autoplayHoverPause: true
         });
 
-        //Portfolio
+        // skills isotop
         $(function () {
-
-            var filterList = {
-
-                init: function () {
-
-                    $('#portfoliolist').mixItUp({
-                        selectors: {
-                            target: '.portfolio',
-                            filter: '.filter'
-                        },
-                        load: {
-                            filter: '.app'
-                        }
-                    });
-                },
-
-
-
-            };
-
-            // Run the show!
-            filterList.init();
-
-
-
-            
-
-
             $('#mix-wrapper').mixItUp({
             	load: {
             		sort: 'order:asc'
@@ -145,8 +117,30 @@
             		}
             	}
             });
+        }); /*End of skills isotop*/
 
+        // Contact form
+        $('.send-message').on( 'click', function() {
+            $.ajax({
+                url: 'contact_email.php',
+                type: 'post',
+                dataType: 'json',
+                data: {
+                    'name':$('#name').val(),
+                    'email':$('#email').val(),
+                    'message':$('#message').val()
+                },
+                success: function (data) {
+                    console.log('data: ', data);
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    console.log('jqXHR: ',jqXHR);
+                    console.log('textStatus: ',textStatus);
+                    console.log('errorThrown: ',errorThrown);
+                }
+            });
 
+            return false;
         });
 
     });

@@ -1,4 +1,5 @@
 <?php
+
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
@@ -7,7 +8,7 @@ $to = "jack.freiermuth@gmail.com";
 $subject = "Jackfry.net Contact Form!";
 // $human = $_POST['human'];
 
-$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+$body = "From: $name\nE-Mail: $email\nMessage:\n$message";
 
 // if ($_POST['submit']/* && $human == '4'*/) {				 
 	if (mail ($to, $subject, $body, $from)) { 

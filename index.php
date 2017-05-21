@@ -146,7 +146,7 @@
 
 					<div class="brk"></div>
 					<p>
-						<a href="#portfolios" class="btn btn-default btn-lg scrollto">SEE MY WORKS</a>&nbsp;&nbsp;
+						<!-- <a href="#portfolios" class="btn btn-default btn-lg scrollto">SEE MY WORKS</a>&nbsp;&nbsp; -->
 						<a href="#contact" class="btn btn-default btn-lg btn-nobg scrollto">CONTACT ME</a>
 					</p>
 				</div>
@@ -173,137 +173,83 @@
 		</div>
 	</div>
 </section>
+<section class="skill-holder"><!--skills-->
 
-
-<section class="skill-holder"><!--home-->
-
-<?php
-// $list = array(
-// 	'back-end' => array(
-// 		"Code Ignitor Framework",
-// 		"Google Analytics API",
-// 		),
-// 	'front-end' => array(
-// 		'Scalable Vector Graphics',
-// 		'Another Very Very Very Long Text',
-// 		),
-// 	'server' => array(
-// 		"New Linux Server Setup",
-// 		'SSL Certificate Renewal',
-// 		'Another Really Really Really Long Text',
-// 		),
-// 	'misc' => array(
-// 		'Jira Task Management',
-// 		'Fogbugz Task Management',
-// 		'Basecamp Task Management',
-// 		),
-// 	);
-$list = array(
-	'back-end' => array(
-		"Scripting",
-		"Code Ignitor Framework",
-		"MySQL",
-		"phpMyAdmin",
-		"PHP",
-		"WordPress",
-		"Google Analytics API",
+	<?php
+	$list = array(
+		'back-end' => array(
+			"Scripting",
+			"Code Ignitor Framework",
+			"MySQL",
+			"phpMyAdmin",
+			"PHP",
+			"WordPress",
+			"Google Analytics API",
 		),
-	'front-end' => array(
-		"jQuery",
-		"AJAX Calls",
-		'JSON',
-		'HTML5',
-		'CSS',
-		'Scalable Vector Graphics',
+		'front-end' => array(
+			"jQuery",
+			"AJAX Calls",
+			'JSON',
+			'HTML5',
+			'CSS',
+			'Scalable Vector Graphics',
 		),
-	'server' => array(
-		"Linux Server Setup",
-		"Crontab",
-		'Unix Shell',
-		'SVN',
-		'GitHub',
-		'Plesk CLI',
-		'Rackspace',
-		'Amazon EC2',
-		'Digital Ocean',
-		'FTP Setup',
-		'cPanel',
-		'SSL Certificates',
+		'server' => array(
+			"Linux Server Setup",
+			"Crontab",
+			'Unix Shell',
+			'SVN',
+			'GitHub',
+			'Plesk CLI',
+			'Rackspace',
+			'Amazon EC2',
+			'Digital Ocean',
+			'FTP Setup',
+			'cPanel',
+			'SSL Certificates',
 		),
-	'misc' => array(
-		'WAMP',
-		'LAMP',
-		'Jira Task Management',
-		'Fogbugz Task Management',
-		'Basecamp Task Management',
-		'Sublime Text 3',
-		'Photoshop',
-		'Illustrator',
+		'misc' => array(
+			'WAMP',
+			'LAMP',
+			'Jira Task Management',
+			'Fogbugz Task Management',
+			'Basecamp Task Management',
+			'Sublime Text 3',
+			'Photoshop',
+			'Illustrator',
 		),
-	);
+	); ?>
 
-?>
+	<div class="container">
+		<div class="row">
+			<h2 class="subtitle">Skills</h2>
 
-<div class="container">
-	<div class="row">
-		<h2 class="subtitle">Skills</h2>
-
-		<div class="twelve columns">
-			<div class="programs">
-				<button class="filter-btn" data-filter="all"><b>All</b></button>
-				<div style="clear: both;"></div>
-				<button class="new-class filter-btn" data-filter=".server">Server</button>
-				<button class="new-class filter-btn" data-filter=".back-end">Back-end</button>
-				<button class="new-class filter-btn" data-filter=".front-end">Front-end</button>
-				<button class="new-class filter-btn" data-filter=".misc">Misc</button>
+			<div class="twelve columns">
+				<div class="programs">
+					<button class="filter-btn" data-filter="all"><b>All</b></button>
+					<div style="clear: both;"></div>
+					<button class="new-class filter-btn" data-filter=".server">Server</button>
+					<button class="new-class filter-btn" data-filter=".back-end">Back-end</button>
+					<button class="new-class filter-btn" data-filter=".front-end">Front-end</button>
+					<button class="new-class filter-btn" data-filter=".misc">Misc</button>
+				</div>
 			</div>
-		</div>
-	</div><!-- end of row -->
+		</div><!-- end of row -->
 
-	<div class="row">
-		<div class="twelve columns">
-			<ul class="courses" id="mix-wrapper">
-				<?php 
-				foreach ($list as $category => $category_array) {
-					foreach ($category_array as $skill) {
-						echo '<li class="mix-target '.$category.'"><span>'.$skill.'</span></li>';
-
-					}
-				} ?>
-			</ul>
-		</div>
-	</div><!-- end of row -->   
-</div><!-- end of container -->
-
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		<div class="row">
+			<div class="twelve columns">
+				<ul class="courses" id="mix-wrapper">
+					<?php 
+					foreach ($list as $category => $category_array) {
+						foreach ($category_array as $skill) {
+							echo '<li class="mix-target '.$category.'"><span>'.$skill.'</span></li>';
+						}
+					} ?>
+				</ul>
+			</div>
+		</div><!-- end of row -->   
+	</div><!-- end of container -->
+</section><!-- end of skills section -->
 
 <section id="services" class="services"><!-- services -->
 	<div class="container">
@@ -349,204 +295,8 @@ $list = array(
 		</div>
 	</div>
 </section>
+
 <!-- end of services -->
-
-<!-- <section class="portfolio-holder" id="portfolios">
-	<div class="container">
-		<div class="row">
-			<h2 class="subtitle">my portfolio</h2>
-
-			<div class="col-md-12">
-				<div class="filter-holder">
-					<ul id="filters" class="clearfix">
-						<li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
-						<li><span class="filter" data-filter=".app">App</span></li>
-						<li><span class="filter" data-filter=".card">Card</span></li>
-						<li><span class="filter" data-filter=".icon">Icon</span></li>
-						<li><span class="filter" data-filter=".logo">Logo</span></li>
-						<li><span class="filter" data-filter=".web">Web</span></li>
-					</ul>
-				</div>
-
-				<div id="portfoliolist">
-
-				<?php
-
-				// $list = array(
-				// 	array(
-				// 		"title" => "Bird Document",
-				// 		"text-category" => "Logo",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "logo"
-				// 	),
-				// 	array(
-				// 		"title" => "Visual Infography",
-				// 		"text-category" => "APP",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "app"
-				// 	),
-				// 	array(
-				// 		"title" => "Sonor's",
-				// 		"text-category" => "Web design",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "web"
-				// 	),
-				// 	array(
-				// 		"title" => "Typography Company",
-				// 		"text-category" => "Business card",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "card"
-				// 	),
-				// 	array(
-				// 		"title" => "Weatherette",
-				// 		"text-category" => "APP",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "app"
-				// 	),
-				// 	array(
-				// 		"title" => "BMF",
-				// 		"text-category" => "Business card",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "card"
-				// 	),
-				// 	array(
-				// 		"title" => "Techlion",
-				// 		"text-category" => "Business card",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "card"
-				// 	),
-				// 	array(
-				// 		"title" => "KittyPic",
-				// 		"text-category" => "Logo",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "logo"
-				// 	),
-				// 	array(
-				// 		"title" => "Graph Plotting",
-				// 		"text-category" => "APP",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "app"
-				// 	),
-				// 	array(
-				// 		"title" => "QR Quick",
-				// 		"text-category" => "Business card",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "card"
-				// 	),
-				// 	array(
-				// 		"title" => "Mobi Sock",
-				// 		"text-category" => "Logo",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "logo"
-				// 	),
-				// 	array(
-				// 		"title" => "Village Community",
-				// 		"text-category" => "Logo",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "logo"
-				// 	),
-				// 	array(
-				// 		"title" => "Domino's",
-				// 		"text-category" => "Icon",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "icon"
-				// 	),
-				// 	array(
-				// 		"title" => "Backend Admin",
-				// 		"text-category" => "Web design",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "web"
-				// 	),
-				// 	array(
-				// 		"title" => "Instagram",
-				// 		"text-category" => "Icon",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "icon"
-				// 	),
-				// 	array(
-				// 		"title" => "Student Guide",
-				// 		"text-category" => "Web design",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "web"
-				// 	),
-				// 	array(
-				// 		"title" => "Scoccer",
-				// 		"text-category" => "Icon",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "icon"
-				// 	),
-				// 	array(
-				// 		"title" => "3D Map",
-				// 		"text-category" => "Icon",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "icon"
-				// 	),
-				// 	array(
-				// 		"title" => "Note",
-				// 		"text-category" => "Web design",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "web"
-				// 	),
-				// 	array(
-				// 		"title" => "Native Designers",
-				// 		"text-category" => "Logo",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "logo"
-				// 	),
-				// 	array(
-				// 		"title" => "Bookworm",
-				// 		"text-category" => "Logo",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "logo"
-				// 	),
-				// 	array(
-				// 		"title" => "Sandwich",
-				// 		"text-category" => "Icon",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "icon"
-				// 	),
-				// 	array(
-				// 		"title" => "Reality",
-				// 		"text-category" => "Business card",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "card"
-				// 	),
-				// 	array(
-				// 		"title" => "Speciallisterne",
-				// 		"text-category" => "Logo",
-				// 		"image" => "http://placehold.it/400x300",
-				// 		"data-category" => "logo"
-				// 	),
-				// );
-				// foreach ($list as $value) { 
-
-					?>
-
-					<div class="portfolio <?php //echo $value['data-category']; ?>" data-cat="<?php //echo $value['data-category']; ?>">
-						<div class="portfolio-wrapper">
-							<img src="<?php //echo $value['image']; ?>" alt=""/>
-
-							<div class="label">
-								<div class="label-text">
-									<h5 class="text-title"><?php //echo $value['title']; ?></h5>
-									<span class="text-category"><?php //echo $value['text-category']; ?></span>
-
-									<div class="porticon"><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
-									</div>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>
-				<?php //} ?>
-
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
-<!--end of portfolio-->
-
 <!-- <section class="call-to-action">
 	<div class="container">
 		<div class="row">
@@ -682,7 +432,7 @@ $list = array(
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-6">
-				<form class="form-horizontal" form method="post" action="contact_email.php">
+				<form class="form-horizontal">
 					<div class="form-group">
 						<div class="col-sm-10">
 							<input name="name" type="text" class="form-control" id="name" placeholder="Your Name...">
@@ -695,12 +445,12 @@ $list = array(
 					</div>
 					<div class="form-group">
 						<div class="col-sm-10">
-							<textarea  name="message" class="form-control" rows="3" placeholder="Your Message..."></textarea>
+							<textarea id="message" name="message" class="form-control" rows="3" placeholder="Your Message..."></textarea>
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="col-sm-12">
-							<button type="submit" class="btn btn-lg btn-default">Send Message</button>
+							<button type="submit" class="send-message btn btn-lg btn-default">Send Message</button>
 						</div>
 					</div>
 				</form>
