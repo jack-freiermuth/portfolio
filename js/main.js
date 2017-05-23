@@ -96,7 +96,8 @@
             autoplayHoverPause: true
         });
 
-        // skills isotop
+        /* Isotop for skills
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
         $(function () {
             $('#mix-wrapper').mixItUp({
             	load: {
@@ -119,7 +120,9 @@
             });
         }); /*End of skills isotop*/
 
-        // Contact form
+
+        /* Contact Form Send
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
         $('.send-message').on( 'click', function() {
             $.ajax({
                 url: 'contact_email.php',
@@ -132,16 +135,33 @@
                 },
                 success: function (data) {
                     console.log('data: ', data);
+                    $('.success').show();
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
                     console.log('jqXHR: ',jqXHR);
+                    console.log('Response Text: ',jqXHR.responseText);
                     console.log('textStatus: ',textStatus);
                     console.log('errorThrown: ',errorThrown);
+                    console.log( "Error" );
                 }
             });
 
             return false;
         });
+
+
+        /* Success Message for contact form
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        var close = document.getElementsByClassName("closebtn");
+        var i;
+
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function(){
+                var div = this.parentElement;
+                div.style.opacity = "0";
+                setTimeout(function(){ div.style.display = "none"; }, 600);
+            }
+        }
 
     });
 

@@ -183,6 +183,7 @@
 			'FTP Setup',
 			'cPanel',
 			'SSL Certificates',
+			'Fail2Ban',
 		),
 		'misc' => array(
 			'WAMP',
@@ -403,7 +404,7 @@
 						<div class="ft-icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
 					</div>
 					<div class="col-xs-8 col-md-10">
-						<p>jack.freiermuth@gmail.com <br> www.jackfry.net</p>
+						<p>jack.freiermuth@gmail.com <br> www.ajacks.org</p>
 					</div>
 				</div>
 			</div>
@@ -428,6 +429,10 @@
 						<div class="col-sm-12">
 							<button type="submit" class="send-message btn btn-lg btn-default">Send Message</button>
 						</div>
+					</div>
+					<div style='display: none;' class="alert success">
+						<span class="closebtn">&times;</span>  
+						<strong>Your message was sent!</strong> I'll get back to you as soon as I can!.
 					</div>
 				</form>
 			</div>
