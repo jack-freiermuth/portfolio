@@ -134,8 +134,7 @@
                     'message':$('#message').val()
                 },
                 success: function (data) {
-                    console.log('data: ', data);
-                    $('.success').show();
+                    $(".closebtn").parent().css('opacity', '100');
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
                     console.log('jqXHR: ',jqXHR);
@@ -158,8 +157,9 @@
         for (i = 0; i < close.length; i++) {
             close[i].onclick = function(){
                 var div = this.parentElement;
-                div.style.opacity = "0";
-                setTimeout(function(){ div.style.display = "none"; }, 600);
+                setTimeout(function(){ 
+                    div.style.opacity = "0";
+                }, 600);
             }
         }
 

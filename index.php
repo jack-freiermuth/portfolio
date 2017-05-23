@@ -430,15 +430,16 @@
 							<button type="submit" class="send-message btn btn-lg btn-default">Send Message</button>
 						</div>
 					</div>
-					<div style='display: none;' class="alert success">
+					<div style='opacity: 0;' class="alert success">
 						<span class="closebtn">&times;</span>  
-						<strong>Your message was sent!</strong> I'll get back to you as soon as I can!.
+						<strong>Your message was sent!</strong> I'll get back to you as soon as I can!
 					</div>
 				</form>
 			</div>
 		</div>
 		<div class="row"><!--footer-social-icon-->
 			<div class="col-xs-12 col-md-12">
+				<div class="foot-line"></div>
 				<ul class="foot-social">
 					<li class="ft-in">
 						<a target="_blank" href="https://www.linkedin.com/in/jackgustaf/">
@@ -446,9 +447,6 @@
 						</a>
 					</li>
 				</ul>
-				<!-- <div class="foot-line"></div> -->
-				<!-- <p class="footer-text">Copyright &copy; 2017 IZSU | All Rights Reserved. Designed by <a -->
-						<!-- href="http://www.webthil.com">Webthil</a></p> -->
 			</div>
 		</div>
 		<!--end of footer-social-icon-->
