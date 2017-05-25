@@ -34,6 +34,7 @@
 	<![endif]-->
 </head>
 <body>
+<?php include_once("analyticstracking.php") ?>
 <div class="preloader">
 	<div class="sk-cube-grid"><!--preloader-->
 		<div class="sk-cube sk-cube1"></div>
@@ -56,7 +57,7 @@
 				<div class="col-xs-12 col-md-6">
 					<ul class="top-contact-detail">
 						<li><!-- <i class="fa fa-paper-plane" aria-hidden="true"></i>  -->jack.freiermuth@gmail.com</li>
-						<li><i class="fa fa-phone" aria-hidden="true"></i> (715) 441-3948</li>
+						<li><a class="gaTracked link_phone-number-header no-decorations" href="tel:+1-715-441-3948"><i class="fa fa-phone" aria-hidden="true"></i> (715) 441-3948</a></li>
 						<!-- <li><i class="fa fa-skype" aria-hidden="true"></i> myskypeid</li> -->
 					</ul>
 				</div>
@@ -87,12 +88,12 @@
 		</div>
 		<div class="collapse navbar-collapse" id="mobile-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#home">home</a></li>
-				<li><a href="#about">about me</a></li>
-				<li><a href="#services">services</a></li>
+				<li><a class="gaTracked nav-bar_home" href="#home">home</a></li>
+				<li><a class="gaTracked nav-bar_about" href="#about">about me</a></li>
+				<li><a class="gaTracked nav-bar_services" href="#services">services</a></li>
+				<li><a class="gaTracked nav-bar_contact" href="#contact">contact</a></li>
 				<!-- <li><a href="#portfolios">portfolio</a></li> -->
 				<!-- <li><a href="#testimonial">testimonial</a></li> -->
-				<li><a href="#contact">contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -123,7 +124,7 @@
 					<div class="brk"></div>
 					<p>
 						<!-- <a href="#portfolios" class="btn btn-default btn-lg scrollto">SEE MY WORKS</a>&nbsp;&nbsp; -->
-						<a href="#contact" class="btn btn-default btn-lg btn-nobg scrollto">CONTACT ME</a>
+						<a href="#contact" class="gaTracked button_contact-me btn btn-default btn-lg btn-nobg scrollto">CONTACT ME</a>
 					</p>
 				</div>
 			</div>
@@ -144,7 +145,7 @@
 				<p>Hello! My name is Jack Freiermuth, and I like to travel, snowboard, play video games, and of course, do web development!</p>
 
 				<p>I have a B.S. in Computer Science and another B.S. in Mathematics. Programming really is a passion of mine, and I am constantly looking to learn new programming techniques and try new things.</p>
-				<a href="files/Jack-Freiermuth-Resume.pdf" download="Jack-Freiermuth-Resume.pdf" type="button" class="btn btn-default btn-lg">DOWNLOAD MY RESUME</a>
+				<a href="files/Jack-Freiermuth-Resume.pdf" download="Jack-Freiermuth-Resume.pdf" type="button" class="gaTracked button_download-my-resume btn btn-default btn-lg">DOWNLOAD MY RESUME</a>
 			</div>
 		</div>
 	</div>
@@ -203,12 +204,12 @@
 
 			<div class="twelve columns">
 				<div class="programs">
-					<button class="filter-btn" data-filter="all"><b>All</b></button>
+					<button class="gaTracked skill-button-all filter-btn" data-filter="all"><b>All</b></button>
 					<div style="clear: both;"></div>
-					<button class="new-class filter-btn" data-filter=".server">Server</button>
-					<button class="new-class filter-btn" data-filter=".back-end">Back-end</button>
-					<button class="new-class filter-btn" data-filter=".front-end">Front-end</button>
-					<button class="new-class filter-btn" data-filter=".misc">Misc</button>
+					<button class="gaTracked skill_server new-class filter-btn" data-filter=".server">Server</button>
+					<button class="gaTracked skill_back-end new-class filter-btn" data-filter=".back-end">Back-end</button>
+					<button class="gaTracked skill_front-end new-class filter-btn" data-filter=".front-end">Front-end</button>
+					<button class="gaTracked skill_misc new-class filter-btn" data-filter=".misc">Misc</button>
 				</div>
 			</div>
 		</div><!-- end of row -->
@@ -395,7 +396,7 @@
 						<div class="ft-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
 					</div>
 					<div class="col-xs-8 col-md-10">
-						<p>(715) 441-3948</p>
+						<a class="gaTracked link_phone-number-footer no-decorations" href="tel:+1-715-441-3948">(715) 441-3948</a>
 					</div>
 				</div>
 				<div class="foot-line"></div>
@@ -427,7 +428,7 @@
 					</div>
 					<div class="form-group">
 						<div class="col-sm-12">
-							<button type="submit" class="send-message btn btn-lg btn-default">Send Message</button>
+							<button type="submit" class="gaTracked button_send-message send-message btn btn-lg btn-default">Send Message</button>
 						</div>
 					</div>
 					<div style='opacity: 0;' class="alert success">

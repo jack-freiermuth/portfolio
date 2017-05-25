@@ -876,8 +876,11 @@ footer p {
 }
 
 
-
-
+a[href^="tel:"] {
+  color: white;
+  text-decoration: none;
+  font-size: inherit;
+}
 
 /* Error, Success, Warning, and Info Messages with CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
