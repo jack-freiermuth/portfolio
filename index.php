@@ -207,7 +207,7 @@
 
 			<div class="twelve columns">
 				<div class="programs">
-					<button class="gaTracked skill-button-all filter-btn" data-filter="all"><b>All</b></button>
+					<button class="gaTracked skill_button-all filter-btn" data-filter="all"><b>All</b></button>
 					<div style="clear: both;"></div>
 					<button class="gaTracked skill_server new-class filter-btn" data-filter=".server">Server</button>
 					<button class="gaTracked skill_back-end new-class filter-btn" data-filter=".back-end">Back-end</button>
