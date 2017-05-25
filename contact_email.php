@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 $from = "From: $name"; 
 $to = "jack.freiermuth@gmail.com"; 
-$subject = "Jackfry.net Contact Form!";
+$subject = "ajacks.org Contact Form!";
 // $human = $_POST['human'];
 
 $body = "From: $name\nE-Mail: $email\nMessage:\n$message";
