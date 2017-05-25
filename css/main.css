@@ -884,46 +884,14 @@ a[href^="tel:"] {
 
 /* Error, Success, Warning, and Info Messages with CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*.isa_info, .isa_success, .isa_warning, .isa_error {
-	margin: 10px 0px;
-	padding:12px;
-}
-.isa_info, .isa_info p, .isa_info i {
-    color: #00529B;
-    background-color: #BDE5F8;
-}
-.isa_success, .isa_success p, .isa_success i {
-    color: #4F8A10;
-    background-color: #DFF2BF;
-}
-.isa_warning, .isa_warning p, .isa_warning i {
-    color: #9F6000;
-    background-color: #FEEFB3;
-}
-.isa_error, .isa_error p, .isa_error i {
-    color: #D8000C;
-    background-color: #FFBABA;
-}
-.isa_info i, .isa_success i, .isa_warning i, .isa_error i {
-	float: left;
-	font-size:2em;
-	height: 52px;
-	line-height: 52px;
-	margin:10px 22px;
-	vertical-align:middle;
-}
-
-@media (min-width: 768px) {
-	.isa_info, .isa_success, .isa_warning, .isa_error {
-	    width: 83.33333333%;
-	}
-}
-*/
 
 
 
-
-
+.wrong-entry {
+    border-color: #ed1c24;
+    color: #ed1c24;
+    border: 1px solid #FF3E3E;
+}
 
 .alert {
     padding: 20px;

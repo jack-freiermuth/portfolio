@@ -124,6 +124,7 @@
         /* Contact Form Send
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
         $('.send-message').on( 'click', function() {
+
             $.ajax({
                 url: 'contact_email.php',
                 type: 'post',
@@ -131,10 +132,28 @@
                 data: {
                     'name':$('#name').val(),
                     'email':$('#email').val(),
-                    'message':$('#message').val()
+                    'message':$('#message').val(),
+                    'g-recaptcha-response':grecaptcha.getResponse()
                 },
                 success: function (data) {
                     $(".closebtn").parent().css('opacity', '100');
+                    console.log('data: ', data);
+                	$('.alert').removeClass('success');
+                	$(".wrong-entry").each(function() {
+                		$(this).removeClass('wrong-entry')
+					});
+
+                    if( '0' === data.status_code ) {
+                    	$('.alert').addClass('success');
+                    } else if ( '1' === data.status_code ) {
+                    	// $('.form-control').addClass('wrong-entry');
+                    } else if ( '2' === data.status_code ) {
+                    } else if ( '3' === data.status_code ) {
+                    	$('.g-recaptcha div:first').addClass('wrong-entry');
+                    }
+
+                	$('.alert_message').html(data.message);
+
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
                     console.log('jqXHR: ',jqXHR);
@@ -181,8 +200,6 @@ $(".gaTracked").click(function() {
 			break;
 		}
 	}
-	console.log('gaTracked is index '+gaTracked_index);
-	console.log('event name will be ' + classList[gaTracked_index+1]);
 
 	var event_split = classList[gaTracked_index+1].split("_");
 

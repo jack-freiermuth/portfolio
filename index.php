@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,6 +26,8 @@
 	<link type="text/css" href="css/main.css" rel="stylesheet">
 	<!-- Theme color CSS -->
 	<link type="text/css" href="css/theme/blue.css" rel="stylesheet">
+	<!-- Recaptcha -->
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -426,14 +429,15 @@
 							<textarea id="message" name="message" class="form-control" rows="3" placeholder="Your Message..."></textarea>
 						</div>
 					</div>
+					<div style="margin-bottom: 15px;" data-theme="dark" class="g-recaptcha" data-sitekey="6LdH3CIUAAAAAF0pnu1ocMwwoH4rdfHlH7yoY7Ks"></div>
 					<div class="form-group">
 						<div class="col-sm-12">
 							<button type="submit" class="gaTracked button_send-message send-message btn btn-lg btn-default">Send Message</button>
 						</div>
 					</div>
-					<div style='opacity: 0;' class="alert success">
+					<div style='opacity: 0;' class="alert">
 						<span class="closebtn">&times;</span>  
-						<strong>Your message was sent!</strong> I'll get back to you as soon as I can!
+						<p class='alert_message'><strong>Your message was sent!</strong> I'll get back to you as soon as I can!</p>
 					</div>
 				</form>
 			</div>
