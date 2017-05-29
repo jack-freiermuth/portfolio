@@ -13,7 +13,7 @@
 	<meta name="author" content="Webthil">
 	<link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Jack Freiermuth</title>
+	<title>Ajacks.org</title>
 
 	<!-- Bootstrap -->
 	<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
@@ -173,6 +173,7 @@
 			'HTML5',
 			'CSS',
 			'Scalable Vector Graphics',
+			'Bootstrap',
 		),
 		'server' => array(
 			"Linux Server Setup",
