@@ -60,7 +60,7 @@
 				<div class="col-xs-12 col-md-6">
 					<ul class="top-contact-detail">
 						<li><!-- <i class="fa fa-paper-plane" aria-hidden="true"></i>  -->jack.freiermuth@gmail.com</li>
-						<li><a class="gaTracked link_phone-number-header no-decorations" href="tel:+1-715-441-3948"><i class="fa fa-phone" aria-hidden="true"></i> (715) 441-3948</a></li>
+						<li><a class="gaTracked link_phone-number-header no-decorations" href="tel:+1-612-404-6265"><i class="fa fa-phone" aria-hidden="true"></i> (612) 404-6265</a></li>
 						<!-- <li><i class="fa fa-skype" aria-hidden="true"></i> myskypeid</li> -->
 					</ul>
 				</div>
@@ -162,6 +162,9 @@
 		'back-end' => array(
 			"Code Ignitor Framework",
 			"Google Analytics API",
+			"Facebook API",
+			"Display & Video 360 API",
+			"Rest APIs",
 			"MySQL",
 			"PHP",
 			"phpMyAdmin",
@@ -199,9 +202,10 @@
 		'misc' => array(
 			'Basecamp Task Management',
 			'Fogbugz Task Management',
-			'Illustrator',
 			'Jira Task Management',
 			'LAMP',
+			'Illustrator',
+			'Figma',
 			'Photoshop',
 			'Sublime Text 3',
 			'WAMP',
@@ -272,11 +276,11 @@
 					</section>
 					<section>
 						<div class="sericon-holder">
-							<i class="fa fa-wordpress" aria-hidden="true"></i>
+							<i class="fa fa-cogs" aria-hidden="true"></i>
 						</div>
-						<h4>wordpress development</h4>
+						<h4>Solution Analyst</h4>
 
-						<p>If you want a Wordpress site, I can set it up for you the proper way, with child themes, so that you won't accidently delete your website when you update. My role at a previous web hosting job was Wordpress Maintenance.</p>
+						<p>I can help break down a project, step by step to get all of the tasks organized, estimate, and deligate the work in a realistic manor.</p>
 					</section>
 				</div>
 			</div>
@@ -417,7 +421,7 @@
 						<div class="ft-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
 					</div>
 					<div class="col-xs-8 col-md-10">
-						<p>Minneapolis <br> 3036 West Lake Street</p>
+						<p>Woodbury, MN</p>
 					</div>
 				</div>
 				<div class="foot-line"></div>
@@ -426,7 +430,7 @@
 						<div class="ft-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
 					</div>
 					<div class="col-xs-8 col-md-10">
-						<a class="gaTracked link_phone-number-footer no-decorations" href="tel:+1-715-441-3948">(715) 441-3948</a>
+						<a class="gaTracked link_phone-number-footer no-decorations" href="tel:+1-612-404-6265">(715) 441-3948</a>
 					</div>
 				</div>
 				<div class="foot-line"></div>
