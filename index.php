@@ -155,7 +155,7 @@
 </section>
 
 
-<section class="skill-holder"><!--skills-->
+<section class="skill-holder">
 
 	<?php
 	$list = array(

@@ -1,5 +1,4 @@
 <?php
-file_put_contents('C:\wamp64\www\debug_file.txt', "\n\n" ."_POST: " . print_r($_POST, true));
 header('Content-type: application/json');
 
 require_once "recaptchalib.php";
@@ -20,8 +19,6 @@ if ($_POST["g-recaptcha-response"]) {
         $_POST["g-recaptcha-response"]
     );
 }
-
-file_put_contents('C:\wamp64\www\debug_file.txt', "\n\n" ."response: " . print_r($response, true), FILE_APPEND);
 
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -54,6 +51,5 @@ if ( !$name || !$email || !$message ) {
 		$response_array['status_code'] = "3"; 
 	}
 }
-
 
 echo json_encode($response_array);

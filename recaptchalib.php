@@ -115,7 +115,6 @@ class ReCaptcha {
             )
         );
         $answers = json_decode($getResponse, true);
-        file_put_contents('C:\wamp64\www\debug_file.txt', "\n\n" ."answers: " . print_r($answers, true), FILE_APPEND);
         $recaptchaResponse = new ReCaptchaResponse();
         if (trim($answers ['success']) == true) {
             $recaptchaResponse->success = true;
